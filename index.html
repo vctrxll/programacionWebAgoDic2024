@@ -1,130 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Clase</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario Colorido</title>
+  <style>
+    /* Estilos generales para el body */
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: linear-gradient(135deg, #0a3aa3 0%, #89cff0 100%);
+    }
+
+    /* Asegura que los elementos dentro del contenedor no se desborden */
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Estilo del contenedor del formulario */
+    .form-container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    /* Estilos generales de los inputs */
+    .form-container input[type="text"],
+    .form-container input[type="email"] {
+      width: 100%; /* Ahora ocupa el 100% del ancho del contenedor */
+      padding: 15px;
+      margin: 10px 0; /* Reduce los márgenes para evitar desbordamientos */
+      border: 2px solid transparent;
+      border-radius: 8px;
+      background-color: #f1f1f1;
+      font-size: 16px;
+      transition: border-color 0.3s ease;
+    }
+
+    /* Cambios en los inputs al hacer focus */
+    .form-container input[type="text"]:focus,
+    .form-container input[type="email"]:focus {
+      border-color: #0a3aa3;
+      outline: none;
+    }
+
+    /* Estilo del botón de envío */
+    .form-container button[type="submit"] {
+      background-color: #0a3aa3;
+      color: white;
+      padding: 15px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Efecto hover en el botón */
+    .form-container button[type="submit"]:hover {
+      background-color: #072c78;
+    }
+
+    /* Estilo del título del formulario */
+    .form-container h2 {
+      color: #0a3aa3;
+      margin-bottom: 20px;
+    }
+
+    /* Pequeñas decoraciones para los inputs */
+    .form-container input[type="text"]::placeholder,
+    .form-container input[type="email"]::placeholder {
+      color: #aaa;
+    }
+  </style>
 </head>
-<!--<body background="e3b82e0a-e561-478b-ab6d-440c93d7cfa0.jpg">-->
-<!--<body bgcolor="#ff6347">-->
 <body>
-<a HREF="clase.html#Alumnos">Alumno</a>
-<a HREF="clase.html#Profesores">Profesores</a>
 
+<div class="form-container">
+  <h2>Formulario de Contacto</h2>
+  <form>
+    <input type="text" placeholder="Nombre Completo" required>
+    <input type="email" placeholder="Correo Electrónico" required>
+    <button type="submit">Enviar</button>
+  </form>
+</div>
 
-<font face="Comic Sans MS, arial, verdana" size="10">Hola Mundo</font>
-
-<a name="Alumnos">
-<table border="2" width="70%" align="center">
-  <tr>
-    <td>Nombre</td>
-    <td>E-Mail</td>
-  </tr>
-  <tr>
-    <td>Mi nombre</td>
-    <td>micorreo@gmail.com</td>
-  </tr>
-</table>
-</a>
-
-<table border="2" width="70%" align="center">
-  <tr>
-    <td>Nombre</td>
-    <td>E-Mail</td>
-  </tr>
-  <tr>
-    <td>Mi nombre</td>
-    <td>micorreo@gmail.com</td>
-  </tr>
-</table>
-
-
-
-<ul type="square">
-  <li>Enero</li>
-  <li>Febrero</li>
-  <li>Marzo</li>
-</ul>
-
-<ol type="1">
-  <li>Enero</li>
-  <li>Febero</li>
-  <li>Marzo</li>
-</ol>
-<a href="ejemplo.html">
-  <img src="e3b82e0a-e561-478b-ab6d-440c93d7cfa0.jpg" width="70%" height="40%">
-</a>
-
-
-<dl>
-  <dt>IMSS</dt>
-  <dd>Instituto Mexicano del Seguro Social</dd>
-  <dt>TecNM</dt>
-  <dd>Tecnologico Nacional de Mexico</dd>
-  <dt>ITT</dt>
-  <dd>Instituto Tecnologico de Tuxtepec</dd>
-</dl>
-
-<a href="ejemplo.html">Ejemplo</a>
-
- <a name="Profesores">
-<table border="2" width="70%" align="center">
-  <tr>
-    <td>Nombre</td>
-    <td>E-Mail</td>
-  </tr>
-  <tr>
-    <td>Mi nombre</td>
-    <td>micorreo@gmail.com</td>
-  </tr>
-</table>
- </a>
-
-<form>
-  <input type="text" name="Nombre" value="Benito Juarez"><br>
-  <input type="password" name="cve"><br>
-  <textarea name="comentatio" rows="10" cols="30">Buzon de quejas y sugerencias</textarea><br>
-
-  <select name="Estaciones">
-    <option>Primavera</option>
-    <option>Verano</option>
-    <option>Otono</option>
-    <option>Invierno</option>
-  </select>
-  <input type="radio" name="estacion2" value="1">Primavera<br>
-  <input type="radio" name="estacion2" value="2">Otono<br>
-  <input type="radio" name="estacion2" value="3">Verano<br>
-  <input type="radio" name="estacion2" value="4">Invierno<br>
-
-
-  <input type="checkbox" name="estacion2" value="1">Primavera<br>
-  <input type="checkbox" name="estacion2" value="2">Otono<br>
-  <input type="checkbox" name="estacion2" value="3">Verano<br>
-  <input type="checkbox" name="estacion2" value="4">Invierno<br>
-
-  <input type="submit" value="Enviar">
-  <input type="reset" value="Limpiar">
-</form>
-
-<video width="220" height="200" controls="">
-  <source scr="uno.mp4" type="videos/mp4">
-</video>
-
-<iframe width="320" height="250" scr="https://www.youtube.com/watch?v=5AO8F4N1Wkw&list=LL&index=22?controls=0" hidden=""></iframe>
-
-
-<form name="formulario" method="post" action="ejemplopost.php">
-Nombre: <input type="text" name="nombre" value="">
-  <input type="submit" />
-</form>
-
-
-<form method="post" action="procesarFormulario.php">
-  <label for="nombre">nombre:</label>
-  <input type="text" id="nombre" name="nombre">
-
-  <label for="correo">correo:</label>
-  <input type="text" id="correo" name="correo">
-  <input type="submit" value="Enviar" />
-</form>
 </body>
 </html>
+
